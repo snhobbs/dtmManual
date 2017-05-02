@@ -1,0 +1,41 @@
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+%use this command for appendix items
+\newcommand{\appItem}[4]{#1& #2& #3& \href{#4}{Link}\\ \hline}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\chapter{Appendix}
+
+\section{Resources $\&$ Documentation}
+
+\subsection{Deap $\&$ TRIUMF Documents}
+
+\begin{table}[ht]
+\begin{tabular}{p{5cm} l p{7cm} l}
+\textbf{Document}&	\textbf{Date}& \textbf{Description}& \textbf{Location}\\ \hline
+\appItem{DEAP-3600 Electronics $\&$ DAQ Technical Design Report}{04/25/2012}{Overview of the first \gls{daq} and electronics structure, some changes have been made}{https://www.snolab.ca/deap/private/TWiki/pub/Main/TechnicalDesignReport/main.pdf}
+\end{tabular}
+\end{table}
+
+\subsection{Manuals $\&$ Data Sheets}
+
+\begin{table}[ht]
+\begin{tabular}{p{5cm} l p{7cm} l}
+\textbf{Document}&	\textbf{Date}& \textbf{Description}& \textbf{Location}\\
+\hline
+\appItem{Altera Stratix IV Overview}{}{Infomation of the Stratix IV family of FPGAs}{https://www.altera.com/products/fpga/stratix-series/stratix-iv/overview.html}
+\appItem{Samtec \gls{fmc} Overview}{}{\gls{fmc} standard description}{https://www.samtec.com/standards/fmc}
+\appItem{Spartan-6 Family Overview}{}{Data sheet for the Spartan-6 FPGAs used for the \gls{fmc}s}{http://www.xilinx.com/support/documentation/data_sheets/ds160.pdf}
+\appItem{Altera MaxV Handbook}{}{Operations handbook for the Altera MaxV FPGA}{https://www.altera.com/content/dam/altera-www/global/en_US/pdfs/literature/hb/max-v/max5_handbook.pdf}
+\appItem{ADC Data Sheet}{}{24 Channel FMC ADC}{http://www.ti.com/lit/ds/symlink/adc12eu050.pdf}
+\end{tabular}
+\end{table}
+
+\subsection{Links $\&$ Websites}
+
+\begin{table}[ht]
+\begin{tabular}{p{5cm} l p{7cm} l}
+\textbf{Document}&	\textbf{Date}& \textbf{Description}& \textbf{Location}\\
+\hline
+\appItem{Clock Distribution Module}{}{EDEV project location of the VME Clock distribution module}{https://edev.triumf.ca/project/edev/vme/edevel00163}
+\appItem{\gls{fmc} HDL Submodules}{}{EDEV project location of several of the ADC board, the SFP board, and the clock cleaner HDL files}{https://edev.triumf.ca/project/firmware_software/edevel00226}
+\end{tabular}
+\end{table}

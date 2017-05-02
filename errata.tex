@@ -1,0 +1,27 @@
+\chapter{Errata}
+\label{chap:errata}
+
+\section{JTAG Issues}
+\subsection{USB Blaster Revision}
+\begin{description}
+\item[USB Blaster User Guide:]\url{https://www.altera.com/content/dam/altera-www/global/en_US/pdfs/literature/ug/ug_usb_blstr.pdf}
+\end{description}
+Issues have been noted using the JTAG USB blaster. It is unclear if the issue is due to the Linux software, however Rev.B of the JTAG USB Blaster wouldn't work at SNOLAB but switching to Rev.C fixed this issue. It is advised to continue using Rev.C.
+
+\subsection{NIOS Command Shell Version}
+\begin{description}
+\item[USB Blaster User Guide:]\url{https://www.altera.com/content/dam/altera-www/global/en_US/pdfs/literature/ug/ug_usb_blstr.pdf}
+\end{description}
+When loading the firmware it is necessary to use the correct nios2\_command\_shell.sh version. For edevl00268 the Version 13.0sp1, Build 232 works reliably. However for edevel00365 (compiled with Quartus 14.1), the JTAG programming seems to be more reliable using the Quartus Version 14.1, Build 190 NIOS2 Command Shell as opposed to the 13.0sp1 with every load succeeding instead of having to flash the card a couple of times for it to work.
+
+\NOTE{It has been previously stated that Altera Quartus Version 13.0sp1, Build 232 is used to compile hardware/software and for flash programming, while due to an Altera bug Version 12.1sp1 Build 243 is needed in order to run the system console script}
+
+\section{VME Motherboard Version A}
+Edevel00268 has never worked on the Rev.A 3xFMC motherboard and only runs on the Rev.B board even though changes between the boards are minimal. Edevel00365 however has been confirmed to work interchangeably on the revisions.
+
+\section{Load Scripts Failing}
+The flash is not always programmed correctly with the JTAG (other loading methods have yet to be throughly tested), so it is essential to check the firmware timestamp (HW Version HHDDMMYY format) on \gls{jalisco} after a flash has been preformed. Additionally to ensuring that the correct install has been made the timestamp will hint as to which of the two images is being used. With a quick glance at the hardware timestamp (see Fig. \ref{Fig:jaliscoTopScreen}) a lot of time and suffering can be averted.
+
+%\section{VME Address}
+%\label{sec:baseAddressErrata}
+%changed base address

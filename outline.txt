@@ -1,0 +1,38 @@
+Sources
+
+Technical report https://www.snolab.ca/deap/private/TWiki/bin/view/Main/TechnicalDesignReport
+
+Trigger Page (out of date overview) https://www.snolab.ca/deap/private/TWiki/bin/view/Main/TriggerPage
+
+DTM Trigger Sources https://www.snolab.ca/deap/private/TWiki/bin/view/Main/Dtmtriggersrc
+
+General Trigger Scheme (all in thesis) https://www.snolab.ca/deap/private/TWiki/bin/view/Main/GtriggerInfo
+
+Firmware modules https://www.snolab.ca/deap/private/TWiki/bin/view/Main/Triggerproject
+
+Baseline Compensation https://www.snolab.ca/deap/private/TWiki/bin/view/Main/DTMBaseline
+
+Editing DAQ setting https://www.snolab.ca/deap/private/TWiki/bin/view/Main/OpDAQConfig
+
+DAQ Arcitecture https://www.snolab.ca/deap/private/TWiki/bin/view/Main/DAQConcept
+
+DaqDisplay https://www.snolab.ca/deap/private/TWiki/bin/view/Main/DaqDisplay
+
+DTM Registers https://www.snolab.ca/deap/private/TWiki/bin/view/Main/Dtmregisters
+
+ODB Settings https://www.snolab.ca/deap/private/TWiki/bin/view/Main/Dtmodb
+
+intro
+electronics system
+dtm specifics
+triggers
+-periodic
+-adc
+-min bias
+-external
+-exponential
+
+firmware
+testing
+installation
+ODB

@@ -1,0 +1,141 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Contents}{i}{section*.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Figures}{iii}{section*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {2}DTM Hardware}{2}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}VME 3xFMC Carrier Motherboard}{3}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Motherboard Components}{7}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Board Revisions}{8}{subsection.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.3}Board Settings $\&$ Registers}{8}{subsection.2.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.3.1}VME Address}{8}{subsubsection.2.1.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.3.2}DTM Registers}{8}{subsubsection.2.1.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Mezzanine Boards $\&$ DTM Connections}{9}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}24 Channel ADC FMC}{9}{subsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}DEAP Clock Generator Module}{11}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}SFP and Mini-SAS Interface}{11}{subsection.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}DEAP NIM I/O Trigger Module}{13}{subsection.2.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.4.1}Trigger Distribution}{14}{subsubsection.2.2.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Clocking}{15}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Daisy Chain Clocking}{15}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1.1}Distributed Master Clock}{16}{subsubsection.2.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1.2}Clock Distribution Modules}{18}{subsubsection.2.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}DTM Configurations}{18}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {3}Trigger Types}{21}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Periodic}{21}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}ODB Settings}{24}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Exponential}{24}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}ODB Settings}{25}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}External}{26}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}ODB Settings}{28}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Minimum Bias}{28}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}ODB Settings}{33}{subsection.3.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}ADC Trigger}{36}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}ODB Settings}{40}{subsection.3.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}ODB}{42}{section.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {4}Firmware Modules $\&$ Settings}{43}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}SVN Structure}{43}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Trigger System (edevel00261)}{45}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Baseline Compensation}{45}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1.1}Baseline Calculation}{46}{subsubsection.4.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1.2}Baseline Stability}{46}{subsubsection.4.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Self Sum Module}{50}{subsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}Trigger Self Decision Module}{50}{subsection.4.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.4}Trigger Top Module}{51}{subsection.4.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.4.1}Trigger Event Arbiter With FIFO}{51}{subsubsection.4.2.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.4.2}Trigger Prescaler With FIFO}{52}{subsubsection.4.2.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.4.3}Trigger Prescaler}{52}{subsubsection.4.2.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.4.4}Trigger NIM I/O}{52}{subsubsection.4.2.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}3xFMC (edevel00260)}{53}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}DEAP VME Interface (edevel00270)}{53}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}VME Interface Wrapper}{54}{subsection.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}DEAP Firmware Development Quartus 13.0sp1 (edevel00268)}{54}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.1}VME 3xFMC Carrier}{55}{subsection.4.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}DEAP Firmware Quartus 14.1 (edevel00365)}{55}{section.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.1}VME 3xFMC Carrier}{56}{subsection.4.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {5}Installation and Operation}{57}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}JALISCO}{57}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Loading Firmware}{59}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Dual Load Images}{60}{subsection.5.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.1.1}Updating and Verifying Images}{60}{subsubsection.5.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.1.2}Choosing Flash Images}{62}{subsubsection.5.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {6}Appendix}{63}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Resources $\&$ Documentation}{63}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.1}Deap $\&$ TRIUMF Documents}{63}{subsection.6.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.2}Manuals $\&$ Data Sheets}{63}{subsection.6.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.3}Links $\&$ Websites}{63}{subsection.6.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {7}Errata}{65}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}JTAG Issues}{65}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.1}USB Blaster Revision}{65}{subsection.7.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.2}NIOS Command Shell Version}{65}{subsection.7.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}VME Motherboard Version A}{66}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Load Scripts Failing}{66}{section.7.3}

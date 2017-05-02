@@ -1,0 +1,31 @@
+\definecolor{lightgray}{gray}{0.8}
+\begin{figure}
+	\begin{bytefield}{12}
+		\begin{rightwordgroup}{Stratix IV Dual Image}
+			\memsection{0x0}{0x1000000}{3}{Page 0 - Normal Hardware Image (.pof)}\\
+			\memsection{}{0x2000000}{3}{Normal Software Image (.elf)}\\
+			\memsection{}{0x3000000}{3}{Page 1 - Fallback Hardware Image (.pof)}\\
+			\memsection{}{0x3FFFFFF}{3}{Fallback Software Image (.elf)}
+		\end{rightwordgroup}\\
+	\end{bytefield}
+	\caption{The address map of a Stratix IV flash file.}
+	\label{Fig:stratixImageFile}
+\end{figure}
+
+\begin{figure}
+	\begin{bytefield}{24}
+		\begin{rightwordgroup}{Spartan-6 Dual Images}
+			\memsection{0x0}{0x200000}{3}{FMC0 Normal Image}\\
+			\memsection{}{0x400000}{3}{FMC1 Normal Image}\\
+			\memsection{}{0x600000}{3}{FMC2 Normal Image}\\
+			\memsection{}{0x800000}{3}{FMC0 Fallback Image}\\
+			\memsection{}{0xA00000}{3}{FMC1 Fallback Image}\\
+			\memsection{}{0xBFFFFF}{3}{FMC2 Fallback Image}\\
+		\end{rightwordgroup} \\
+		\memsectioncolor{0xC00000}{0x3FFFFFF}{6}{lightgray}{Unused}
+	\end{bytefield}
+	\caption{The address map of the flash file for the three \gls{fmc} boards}
+	\label{Fig:spartanImageFile}
+\end{figure}
+
+

@@ -1,0 +1,30 @@
+\ifglsentryexists{pmma}{}%
+{%
+\gls@defglossaryentry{pmma}%
+{%
+name={PMMA},%
+sort={PMMA},%
+type={main},%
+first={PMMA},%
+firstplural={PMMAs},%
+text={PMMA},%
+plural={PMMAs},%
+description={Polymethyl methacrylate, acrylic used in the \gls {deap} light guides},%
+descriptionplural={Polymethyl methacrylate, acrylic used in the \gls {deap} light guides},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

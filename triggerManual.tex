@@ -1,0 +1,185 @@
+\documentclass{manual}
+\usepackage{xcolor}%
+\definecolor{webblue}{rgb}{0, 1, 1}  % less intense blue
+\definecolor{webred}{rgb}{2, 0.4, 0}   % less intense red
+\usepackage[linkbordercolor = webblue]{hyperref}
+%\usepackage{lscape}
+\usepackage{pdflscape}
+\hypersetup{
+    %bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={DEAP-3600 Trigger Manual},    % title
+    pdfauthor={Simon T. Norman-Hobbs},     % author
+    pdfsubject={User Manual},   % subject of the document
+    pdfkeywords={dark matter, DEAP, DEAP-3600, trigger, pulse shape discrimination}, % list of keywords
+	pdfnewwindow=true,      % links in new PDF window
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkbordercolor=webblue,
+    citebordercolor=green,
+    filebordercolor=blue,
+    urlbordercolor=magenta,
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=black,        % color of links to bibliography
+    filecolor=black,      % color of file links
+    urlcolor=black,           % color of external links
+    linktoc=page,
+}
+
+\usepackage{hypcap}
+\usepackage{biblatex}
+\fontfamily{pcr}
+\usepackage[nonumberlist, xindy]{glossaries}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bm}% bold math
+
+%\usepackage{ulem} THIS BREAKS SHIT
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{bytefield}
+
+\usepackage{epstopdf}
+%\newtheorem{theorem}{Jibberish}
+
+\usepackage{glossary-mcols}
+\usepackage{booktabs}
+
+\DeclareGraphicsExtensions{.pdf,.png, .jpg,.JPG}
+\graphicspath{ {images/} }
+\setlength{\textwidth}{16.2cm}
+\setlength{\oddsidemargin}{0.3cm}
+\setlength{\evensidemargin}{0.3cm}
+\setlength{\topmargin}{-0.3cm}
+\setlength{\textheight}{22.2cm}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}{Definition}
+
+%\bibliographystyle{unsrt}
+
+
+\hyphenation{mar-gin-al-ia}
+
+\input{glossaries}
+\setglossarystyle{tree}
+
+\bibliography{references}
+\setcounter{secnumdepth}{5}
+
+%\def\dsp{\def\baselinestretch{2.0}\large\normalsize}
+\dsp
+
+% % % % % % % % % % % % % % % % % % % % %
+% Tag updates for the firmware
+% % % % % % % % % % % % % % % % % % % % % FIXME CHANGE THESE FOR 268 & 365 SPECIFIC
+\newcommand{\tagTwoSixOne}{tags/release\_054 (in edevel00268)}
+\newcommand{\tagTwoSixZero}{tags/t\_a\_release\_086 (in edevel00268)}
+\newcommand{\tagTwoSixEight}{tags/t\_a\_release\_206}
+\newcommand{\tagTwoSevenZero}{tags/t\_a\_release\_101 (in edevel00268)}
+\newcommand{\tagThreeSixFive}{tags/t\_a\_release\_130}
+
+
+%Safe \url with special characters
+\makeatletter
+\AtBeginDocument{%
+    \newlength{\temp@x}%
+    \newlength{\temp@y}%
+    \newlength{\temp@w}%
+    \newlength{\temp@h}%
+    \def\my@coords#1#2#3#4{%
+      \setlength{\temp@x}{#1}%
+      \setlength{\temp@y}{#2}%
+      \setlength{\temp@w}{#3}%
+      \setlength{\temp@h}{#4}%
+      \adjustlengths{}%
+      \my@pdfliteral{\strip@pt\temp@x\space\strip@pt\temp@y\space\strip@pt\temp@w\space\strip@pt\temp@h\space re}}%
+    \ifpdf
+      \typeout{In PDF mode}%
+      \def\my@pdfliteral#1{\pdfliteral page{#1}}% I don't know why % this command...
+      \def\adjustlengths{}%
+    \fi
+    \ifxetex
+      \def\my@pdfliteral #1{\special{pdf: literal direct #1}}% isn't equivalent to this one
+      \def\adjustlengths{\setlength{\temp@h}{-\temp@h}\addtolength{\temp@y}{1in}\addtolength{\temp@x}{-1in}}%
+    \fi%
+    \def\Hy@colorlink#1{%
+      \begingroup
+        \ifHy@ocgcolorlinks
+          \def\Hy@ocgcolor{#1}%
+          \my@pdfliteral{q}%
+          \my@pdfliteral{7 Tr}% Set text mode to clipping-only
+        \else
+          \HyColor@UseColor#1%
+        \fi
+    }%
+    \def\Hy@endcolorlink{%
+      \ifHy@ocgcolorlinks%
+        \my@pdfliteral{/OC/OCPrint BDC}%
+        \my@coords{0pt}{0pt}{\pdfpagewidth}{\pdfpageheight}%
+        \my@pdfliteral{F}% Fill clipping path (the url's text) with
+                           % current color
+        %
+        \my@pdfliteral{EMC/OC/OCView BDC}%
+        \begingroup%
+          \expandafter\HyColor@UseColor\Hy@ocgcolor%
+          \my@coords{0pt}{0pt}{\pdfpagewidth}{\pdfpageheight}%
+          \my@pdfliteral{F}% Fill clipping path (the url's text)
+                             % with \Hy@ocgcolor
+        \endgroup%
+        \my@pdfliteral{EMC}%
+        \my@pdfliteral{0 Tr}% Reset text to normal mode
+        \my@pdfliteral{Q}%
+      \fi
+      \endgroup
+    }%
+}
+\makeatother
+
+\begin{document}
+
+%\title{DEAP-3600 Trigger User Manual}
+\title{DTM Operation Manual }
+\author{Simon T. Norman-Hobbs}
+\def\logoName{images/DEAPLogoFinal.pdf}
+\def\edition{Rev. 1.1}
+\def\secTitle{\textbf{D}igitizer $\&$ \\ \textbf{T}rigger \\ \textbf{M}odule}
+\titleGM
+%\makeTopPage
+\makeDescriptPage
+
+%\include{abstract}
+
+\begin{frontmatter}
+
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+%\listoftables
+%\clearpage
+\printglossary[title=Table of Symbols $\&$ Daqronyms]
+
+
+\end{frontmatter}
+\pagestyle{headings}
+\include{intro}
+\include{dtm}
+\include{triggers}
+\include{firmware}
+%\include{software}
+\include{installation}
+\include{appendix}
+\include{errata}
+\nocite{*}
+\printbibliography
+
+\end{document}
